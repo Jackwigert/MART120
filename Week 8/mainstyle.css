@@ -1,0 +1,11 @@
+Body {font: size 100px;
+font-family: fantasy;}
+span{
+    background-color:red;
+}
+.blue{color:blue}
+.green{color:green}
+.orange{color:orange}
+#big{font-size: 70px;}
+#lil{font: size 30px; ;}
+.errorClass { border:  5px solid red; }

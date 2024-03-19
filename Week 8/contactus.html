@@ -1,0 +1,44 @@
+<html>
+    <title>contact us page</title>
+    <head>
+        <script>
+            <!--no idea what to google to make the text box red-->
+       function grab()
+       {
+     var name = document.getElementById("txtName").value;
+        if (name == "") {
+    alert("Name must be filled out");
+    return false;
+
+  }
+     var Email = document.getElementById("txtEmail").value;
+         if (Email == "") {
+    alert("email must be filled out");
+    return false;
+  }
+  if (termschk.checked == 0)
+  {alert("must agree to terms");
+return false;}
+
+                document.getElementById("finalResult").innerHTML = "name: " + name + " Email: " + Email;            }
+       </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnsubmit" onclick="grab();">Submit</button></td>
+            </tr>
+        </table>
+        <div id="finalResult"></div>
+        <input type="checkbox" id="termschk" name="termschk" value="terms">
+        <label for="termschk"> I agree to the terms and conditions</label><br>
+    </body>
+</html>
